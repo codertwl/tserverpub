@@ -1,0 +1,16 @@
+syntax = "proto3"; // 版本声明，使用Protocol Buffers v3版本
+
+option go_package="tserverpub/pb";
+
+package pb; // 包名
+
+enum ErrCodeType {
+        INVALID = 0;
+        SUCC = 1;
+}
+
+message BaseRet {
+        ErrCodeType code = 1;
+        string msg = 2;
+}
+
