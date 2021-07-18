@@ -3,5 +3,5 @@
 CUR_PATH=`pwd`
 echo $CUR_PATH
 cd $CUR_PATH
-$HOME/bin/protoc -I $CUR_PATH/pb --go_out=plugins=grpc:$CUR_PATH/../ $CUR_PATH/pb/*.proto
+$HOME/bin/protoc -I $CUR_PATH/pb --go_out=plugins=grpc:$CUR_PATH/../../../ $CUR_PATH/pb/*.proto
 
